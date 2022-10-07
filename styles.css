@@ -1,0 +1,153 @@
+:root{
+    --bgcolor: black;
+    --primary: rgb(5, 136, 1);
+    --secondary:rgb(5,136,1);
+    --sidebartxt:cyan;
+    --maintext:var(--primary);
+    --mainbg:black;
+    --mainitalic:var(--primary)
+}
+
+*{box-sizing: border-box
+;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+    background-color: var(--bgcolor);
+}
+
+h2,h3,h4,h5,h6,p{
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+
+}
+
+main h2{
+    color:var(--primary);
+}
+h2{
+    border-bottom:var(--primary) solid thin;
+}
+main{
+    background-color: var(--bgcolor);
+    padding: 1em;
+}
+main i{
+    color: var(--mainitalic);
+}
+main p, main b, main h3{
+  color: var(--maintext);  
+}
+h3, main b {
+    margin-top: 0;
+    line-height: 1,1em;
+}
+.center{
+    text-align: center;
+}
+h1 span{
+    font-weight: normal;
+    font-size: 16px;
+}
+aside{
+    background-color: var(--bgcolor);
+    color: var(--sidebartxt);
+    min-width: 250px;
+    padding: 1em;
+}
+.contact{
+    list-style:none;
+    font-size:0.9em;
+    padding:0;
+    line-height: 2em;
+}
+.contact li a{
+    color:var(--sidebartxt);
+    text-decoration: none;
+}
+#container{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+}
+#avatar{
+    max-width: 150px;
+    border-radius:50%; 
+    margin: 0 auto; 
+}
+.wrapper{
+    display: flex;
+
+}
+.wrapper div{
+    flex: 2;
+}
+.wrapper div + div{
+    flex: 3;
+    margin-left: 1.5em;
+
+}
+.skills{
+    padding:0;
+    list-style-type:none;
+}
+.skills li{
+    margin-bottom: 1em;
+}
+.skills li div{
+    background-color: var(--secondary);
+    height: 25px;
+    white-space: none;
+    padding-left: 1em;
+    margin-left: -1em;
+}
+.row{
+    display: flex;
+}
+.row p{
+    flex: 1;
+    padding-right: 1.5em;
+    hyphens: auto;
+}
+.row p b {
+    hyphens: auto;
+}
+.skills li span{
+    color: var(--secondary);
+}
+.grade1{
+    width: 20%;
+}
+.grade2{
+    width: 40%;
+}
+.grade3{
+    width: 60%;
+}
+.grade4{
+    width: 80%;
+}
+.grade5{
+    width: 100%;
+}
+
+@media only screen and (max-width:600px) {
+    #container{
+        display: block;
+    }
+    main, aside{
+        width: 100%;
+    }
+    .wrapper{
+        display: block;
+    }
+    .wrapper div + div{
+        margin:0;
+    }
+    .row{
+        display: block;
+    }
+}
