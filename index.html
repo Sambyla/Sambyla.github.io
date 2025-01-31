@@ -83,14 +83,14 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/portfolio5.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/Unity.png" alt="..." />
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
@@ -231,7 +231,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/w0tXakflOyE?si=mTSfpCWFZlwRU-rD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Tein ohjevideon ja tutkimuksen tietokoneen päivittämisestä. Päivityksessä kävin läpi kilpailevia vaihtoehtoja komponentin myyjille, tarvitsemiani komponentteja ja Windowsin ja Linuxin käyttöjärjestelmien lataamisen</p>
+                                    <p class="mb-4">Tein ohjevideon ja tutkimuksen tietokoneen päivittämisestä. Päivityksessä kävin läpi kilpailevia vaihtoehtoja komponentin myyjille, tarvitsemiani komponentteja ja Windowsin ja Linuxin käyttöjärjestelmien lataamisen. Tutkimus oli tehty jo minun olemassa olleista päivityksistä tietokoneeseeni. </p>
                                         <a href="/assets/Tietokoneenpäivitys.AarniAuer.pdf"> Linkki tutkimukseen</a>                                 
                                     <br>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -265,7 +265,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/portfolio2.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Tein ryhmätyössä tavan lisätä uuden admin käyttäjän. Ensiksi käyttäjä kirjautuu sisään, jossa nettisivu tunnistaa admin käyttäjän. Minkä jälkeen nettisivu on tunnistanut admin käyttäjän tietokannan ja session (tieto administa tallennetaan sessioniin, joka on haettu tietokannasta, josta nettisivu sitten lukee sen) toiminnon avulla. Sivu sitten näyttää nappulan ”Uusi ADMIN käyttäjä”, joka on piilotettu ja estetty muille ei-admin käyttäjille.</p>
+                                    <p class="mb-4">Tein ryhmätyössä tavan lisätä uuden admin käyttäjän. Ensiksi käyttäjä kirjautuu sisään, jossa nettisivu tunnistaa admin käyttäjän. Minkä jälkeen nettisivu kutsuu admin käyttäjän tietoja tietokannasta ja tieto administa tallennetaan sessioniin tokenina, josta nettisivu sitten lukee sen toiminnon avulla. Sivu sitten antaa admin käyttäjälle vaihtoehtoisen nappulan ”Uusi ADMIN käyttäjä”, joka on piilotettu ja estetty muille ei-admin käyttäjille (url ja injektio on estetty). Mistä admin voi lisättävä uuden adminin.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Sulje
@@ -354,7 +354,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Unity 3D peli projekti</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Unity 3D peliprojekti</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -362,9 +362,11 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Tässä ideana oli thedä salainen agentti tyyppinen peli </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Unity.png" alt="..." />                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Tein 3D-pelin Unityä käyttäen. Koodikielenä oli C#, ja Unityn version oli 2022.3. Ideana oli tehdä hiippailu peli jossa pelaajan tarkoituksena oli piilotella vihollisilta. Pelaajan tehtävä on kerätä mahdollisimman monta kolikkoa ja selvitä maaliin väistelemällä vihollisia ja niiden hyökkäyksiä.</p>
+                                    <p>Pääsin kokemaan paljon uusia teknologioita ja metodeita tässä projektissa. Uusia asioita oli Navmesh Ai jonka avulla viholliset liikkuivat kartalla itseäisesti navigoiden. Tein viholliselle näkökentän johon pelaajan tullessa viiva piirtyy raycast:in avulla ja vihollinen lähtee seuraamaan pelaajaa yrittäen hyökätä. Muita uusia asioita oli pienkarttaan tarvittavat paremmat kamera asetukset ja valon renderöiminen jota jouduin säätämän.</p>
+                                    <a href="/assets/Unityn_loppuraportti_AarniAuer.pdf"> Linkki loppuraporttiin</a>     
+                                    <br>   
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Sulje
@@ -397,7 +399,10 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/alykoti.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/alykoti_2.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Me tehtiin laajempi Tredun älykotiprojekti. Minun päätehtävä oli tehdä 3D mallit jota pystyisi katselemaan sivustolla älykodin laitteista. Projektissa autoin toimin asiakas rajapinnassa ja julkaisun lähestyessä otin ohjat ongelmista ja autoin siellä sun täällä.</p>
+                                    <p class="mb-4">Tässä tehtiin laajempi Tredun älykotiprojekti. Minun päätehtävä oli tehdä 3D mallit jota pystyisi katselemaan sivustolla älykodin laitteista. 3D mallien toimimiseksi jouduin muokkaamaan niitä Blenderillä ja olin valikoiva vastuu alueenivuoksi mallien ja laitekuvien suhteeen. Projektissa toimin asiakasrajapinnassa kommunikoiden laitetieto tarpeista ja yleisistä vaatimuksista. Selvennin asiakkaalle mitkä laitteiden tiedot ovat puutteelliset ja varmistin asiakkaan tyytyväisyyden. Autoin ryhmän eri osaalueissa ongelmien ja bugien karsimisessa, sekä julkaisuun liittyvissä ongelmissa backendin puolella.</p>
+                                    <br>
+                                    <a href="/assets/älykoti-omadokumentti.pdf"> Linkki projektin päätös-dokumenttiin</a>
+                                    <br>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Sulje
